@@ -25,4 +25,4 @@ post-app:
   service:
     port: 8000
   containerPort: 8000
-  enabled: true  
+  enabled: true

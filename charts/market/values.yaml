@@ -1,9 +1,9 @@
 # charts/market/values.yaml
 
-# 디폴트값
+# 디폴드값 
 replicaCount: 2
 
-image:
+image:  
   repository: hsboo/market-app
   tag: "1.1"
   pullPolicy: IfNotPresent
