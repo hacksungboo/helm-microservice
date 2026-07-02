@@ -1,0 +1,10 @@
+# charts/market/values.yaml
+
+replicaCount: 2
+
+image:
+  repository: hsboo/market-app
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+
+containerPort: 8000
