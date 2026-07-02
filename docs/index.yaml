@@ -3,7 +3,30 @@ entries:
   msa-platform:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2026-07-02T12:16:01.22871362+09:00"
+    created: "2026-07-02T12:28:10.982781299+09:00"
+    dependencies:
+    - condition: index-app.enabled
+      name: index-app
+      repository: file://charts/index
+      version: 0.1.1
+    - condition: market-app.enabled
+      name: market-app
+      repository: file://charts/market
+      version: 0.1.3
+    - condition: post-app.enabled
+      name: post-app
+      repository: file://charts/post
+      version: 0.1.3
+    description: index + market + post
+    digest: 8666e6667130ff20c51c8e0e8985a20d23376dfff2531c2832a32e7909b34c8e
+    name: msa-platform
+    type: application
+    urls:
+    - https://hacksungboo.github.io/helm-microservice/msa-platform-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2026-07-02T12:28:10.95990827+09:00"
     dependencies:
     - condition: index-app.enabled
       name: index-app
@@ -26,7 +49,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-02T12:16:01.220520292+09:00"
+    created: "2026-07-02T12:28:10.944198677+09:00"
     dependencies:
     - condition: index-app.enabled
       name: index-app
@@ -49,7 +72,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-02T12:16:01.2188566+09:00"
+    created: "2026-07-02T12:28:10.93970917+09:00"
     dependencies:
     - condition: index-app.enabled
       name: index-app
@@ -70,4 +93,4 @@ entries:
     urls:
     - https://hacksungboo.github.io/helm-microservice/msa-platform-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-02T12:16:01.21027896+09:00"
+generated: "2026-07-02T12:28:10.937995458+09:00"
